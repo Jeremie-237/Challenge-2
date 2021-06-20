@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="myDiv"></div>
+  </body>
+
+  <script type="text/javaScript">
+
+    let animaux = [ 
+      {nom : 'Elephant', age: 21, estCarnivore: false, img: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'} ,
+      {nom : 'Hippopotame', age: 21, estCarnivore: false, img: 'https://images.unsplash.com/photo-1499842340257-55ccb7a02645?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80' },
+      {nom : 'sanglier', age: 21, estCarnivore: false, img: 'https://images.unsplash.com/photo-1520366945808-4b27385bfa44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80' },
+      {nom : 'chien', age: 21, estCarnivore: false, img: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'} ,
+      {nom : 'fourmi', age: 21, estCarnivore: false, img: 'https://images.unsplash.com/photo-1570553613235-412575f3fb6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'}
+     ];
+     for(let i = 0 , taille=8 ; i < animaux.length ; i++ ,taille=taille-2 ) {
+         let animal = animaux[i].nom ;
+         document.getElementById("myDiv").innerHTML += animal.fontsize(taille) +"<br>" ;
+     }
+     
+
+  </script>
+</html>

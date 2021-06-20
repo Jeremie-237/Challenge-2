@@ -1,0 +1,22 @@
+<html>
+ <body>
+    <div id="myDiv"></div>
+ </body>
+
+<script type="text/javaScript">
+
+let animaux = ['Elephant', 'Hippopotame', 'sanglier', 'chien', 'fourmi'];
+
+for( let i=0 , taille=8 ; i < animaux.length ; i++ , taille=taille-2 ){
+    let animal = animaux[i] ;
+    
+    document.getElementById("myDiv").innerHTML += animal.fontsize(taille)+"<br>";
+}
+
+
+
+
+
+</script>
+
+</html>
